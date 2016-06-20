@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <link data-require="angular.js@1.5.3" data-semver="1.5.3" rel="stylesheet" href="Bootstrap" />
+    <link data-require="bootstrap-css@3.1.1" data-semver="3.1.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <script data-require="angular.js@1.5.3" data-semver="1.5.3" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="decrypt">
+    <input class="form-control" type="text" ng-model="str" placeholder="Input String" />
+    <br />
+    <button class="btn btn-primary" ng-click="algo1(str)">Algorithm 1</button>
+    <button class="btn btn-primary" ng-click="algo2(str)">Algorithm 2</button>
+    <div>{{data}}</div>
+  </body>
+
+</html>
